@@ -5,7 +5,8 @@ All dependency .dll's aren't included since they store the code for the game and
 
 
 ### How are stages loaded?
-Stages are loaded via asset bundles, and accessed through the game's root path. Specifically, the path they access is "%gameroot%/Stages/%stagename%" and both "%stagename%.nick" and "%stagename%.nickscene."
+Stages are loaded via asset bundles, and accessed through the game's root path. Specifically, the path they access is "%gameroot%/Stages/%stagename%". Inside of that path, both "%stagename%.nick" and "%stagename%.nickscene." are loaded.
+
 .nick files store the stage's prefabs, thumbnails, and other information. The .nickscene stores the scene that plugs into NASB's Agent system.
 
 ### How do I make stages?
