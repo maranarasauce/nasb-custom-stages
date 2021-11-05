@@ -7,8 +7,8 @@
     <ProjectGuid>{3820B1E6-A2E5-4558-978F-620A2AB63E00}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Test_Mod</RootNamespace>
-    <AssemblyName>Test Mod</AssemblyName>
+    <RootNamespace>Maranara.AllStars</RootNamespace>
+    <AssemblyName>CustomStages</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
