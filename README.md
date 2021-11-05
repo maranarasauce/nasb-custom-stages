@@ -14,3 +14,23 @@ There's no public way to generate these asset bundles, but I'm working on gettin
 
 ### How do I play stages?
 Once you put the .nick and .nickscene files in the right directories, it's just like loading any other in-game stage. Go to the Stage Select and select one of the custom stages. Be aware that any custom stages you have will also load in Classic mode too.
+
+## 🔧 Developing
+
+Clone the project, then create a file in the `Custom Stages` folder named:
+
+`Custom Stages.csproj.user`
+
+Here you need to set the `GameDir` property to match your install directory.
+
+Example:
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <GameDir>D:\SteamLibrary\steamapps\common\Nickelodeon All-Star Brawl</GameDir>
+  </PropertyGroup>
+</Project>
+```
+
+Now when you build the mod, it should resolve your references automatically, and the build event will copy the plugin into your `BepInEx\plugins` folder!
