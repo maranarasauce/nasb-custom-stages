@@ -30,11 +30,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  
   <ItemGroup>
     <None Include="Custom Stages.csproj.user" />
   </ItemGroup>
-  
   <ItemGroup>
     <Reference Include="0Harmony">
       <HintPath>$(GameDir)\BepInEx\core\0Harmony.dll</HintPath>
@@ -83,8 +81,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  
   <PropertyGroup>
-    <PostBuildEvent>XCOPY /Y "$(TargetPath)" $(GameDir)\BepInEx\plugins"</PostBuildEvent>
+    <PostBuildEvent>XCOPY /Y "$(TargetPath)" "$(GameDir)\BepInEx\plugins"</PostBuildEvent>
   </PropertyGroup>
 </Project>
